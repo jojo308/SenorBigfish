@@ -1,0 +1,3 @@
+displayName = Senor Bigfish
+author = jojo_070
+version = 0.1
