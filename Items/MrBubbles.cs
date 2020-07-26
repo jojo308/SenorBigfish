@@ -22,7 +22,7 @@ namespace SenorBigfish.Items
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.shoot = ProjectileID.Bubble;
             item.shootSpeed = 10;
-            item.knockBack = 6;
+            item.knockBack = 3;
             item.value = 10000;
             item.rare = ItemRarityID.Green;
             item.UseSound = SoundID.Item1;
