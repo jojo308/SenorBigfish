@@ -8,7 +8,7 @@ namespace SenorBigfish.Items.Armor
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("MrBubbles");
+            DisplayName.SetDefault("Bigfish body");
         }
 
         public override void SetDefaults()

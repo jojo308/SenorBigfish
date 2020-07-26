@@ -8,7 +8,7 @@ namespace SenorBigfish.Items.Armor
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("MrBubbles");
+            DisplayName.SetDefault("Bigfish mask");
         }
 
         public override void SetDefaults()
@@ -22,9 +22,9 @@ namespace SenorBigfish.Items.Armor
             item.vanity = true;
         }
 
-        public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
+        public override bool DrawHead()
         {
-            base.DrawHair(ref drawHair, ref drawAltHair);
+            return base.DrawHead();
         }
     }
 }
