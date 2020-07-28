@@ -4,11 +4,12 @@ using Terraria.ModLoader;
 
 namespace SenorBigfish.Items.Armor
 {
-    class BigfishMask : ModItem
+    [AutoloadEquip(EquipType.Head)]
+    public class BigfishMask : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bigfish mask");
+            DisplayName.SetDefault("Bigfish Mask");
         }
 
         public override void SetDefaults()
@@ -17,14 +18,13 @@ namespace SenorBigfish.Items.Armor
             item.height = 26;
             item.maxStack = 1;
             item.value = Item.sellPrice(0, 2, 0, 0);
-            item.headSlot = 26;
-            item.rare = ItemRarityID.Blue;
+            item.rare = ItemRarityID.Green;
             item.vanity = true;
         }
 
         public override bool DrawHead()
         {
-            return base.DrawHead();
+            return false;
         }
     }
 }

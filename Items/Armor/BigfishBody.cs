@@ -4,11 +4,12 @@ using Terraria.ModLoader;
 
 namespace SenorBigfish.Items.Armor
 {
-    class BigfishBody : ModItem
+    [AutoloadEquip(EquipType.Body)]
+    public class BigfishBody : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bigfish body");
+            DisplayName.SetDefault("Bigfish Body");
         }
 
         public override void SetDefaults()
@@ -17,14 +18,13 @@ namespace SenorBigfish.Items.Armor
             item.height = 18;
             item.maxStack = 1;
             item.value = Item.sellPrice(0, 2, 0, 0);
-            item.headSlot = 26;
-            item.rare = ItemRarityID.Blue;
+            item.rare = ItemRarityID.Green;
             item.vanity = true;
         }
 
         public override bool DrawBody()
         {
-            return base.DrawBody();
+            return false;
         }
     }
 }
