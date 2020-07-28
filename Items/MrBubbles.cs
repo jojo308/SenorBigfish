@@ -7,7 +7,7 @@ namespace SenorBigfish.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("MrBubbles"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+            DisplayName.SetDefault("Mr Bubbles");
             Tooltip.SetDefault("It also has an older brother from Mexico");
         }
 
@@ -21,6 +21,7 @@ namespace SenorBigfish.Items
             item.useAnimation = 20;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.shoot = ProjectileID.Bubble;
+            //item.shoot = mod.ProjectileType("BubbleProjectile");
             item.shootSpeed = 10;
             item.knockBack = 3;
             item.value = 10000;
