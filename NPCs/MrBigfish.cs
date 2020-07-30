@@ -41,7 +41,7 @@ namespace SenorBigfish.NPCs
         
          /*
           * Helper method for SpawnChance(), determines the spawnrate based on the given spawnInfo.
-          * NPC spawns naturally in the ocean biome or on the entire surface if it's raining.
+          * This NPC spawns naturally in the ocean biome or on the entire surface if it's raining.
           * */
         private float SpawnChanceHelper(NPCSpawnInfo spawnInfo)
         {
