@@ -20,8 +20,7 @@ namespace SenorBigfish.Items
             item.useTime = 20;
             item.useAnimation = 20;
             item.useStyle = ItemUseStyleID.SwingThrow;
-            item.shoot = ProjectileID.Bubble;
-            //item.shoot = mod.ProjectileType("BubbleProjectile");
+            item.shoot = mod.ProjectileType("BubbleProjectile");
             item.shootSpeed = 10;
             item.knockBack = 3;
             item.value = 10000;
