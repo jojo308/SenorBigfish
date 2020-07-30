@@ -1,6 +1,6 @@
 ﻿using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace SenorBigfish.Buffs
 {
@@ -19,7 +19,7 @@ namespace SenorBigfish.Buffs
         {
             player.buffTime[buffIndex] = 18000;
             player.GetModPlayer<MyPlayer>().ChickenPet = true;
-            bool notSpawned = player.ownedProjectileCounts[mod.ProjectileType("ChickenPet")] <= 0;
+            bool notSpawned = player.ownedProjectileCounts[ProjectileType<Projectiles.Pets.ChickenPet>()] <= 0;
             if (notSpawned && player.whoAmI == Main.myPlayer)
             {
                 Projectile.NewProjectile(player.position.X +
