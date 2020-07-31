@@ -13,15 +13,15 @@ namespace SenorBigfish.Items
 
         public override void SetDefaults()
         {
-            item.damage = 25;
-            item.melee = true;
             item.width = 40;
             item.height = 40;
+            item.damage = 20;
+            item.melee = true;
             item.useTime = 20;
             item.useAnimation = 20;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.shoot = mod.ProjectileType("BubbleProjectile");
-            item.shootSpeed = 10;
+            item.shootSpeed = 7;
             item.knockBack = 3;
             item.value = 10000;
             item.rare = ItemRarityID.Green;
