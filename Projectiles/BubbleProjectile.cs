@@ -25,9 +25,6 @@ namespace SenorBigfish.Projectiles
             projectile.aiStyle = ProjectileID.Bubble;
             projectile.tileCollide = true;
             Main.PlaySound(SoundID.Splash, projectile.position);
-
-            //remove this later
-            Main.time = 20000; // sets time to day everytime projectile is fired
         }
 
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
