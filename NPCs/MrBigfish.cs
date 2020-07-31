@@ -8,7 +8,7 @@ namespace SenorBigfish.NPCs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("MrBigfish");
+            DisplayName.SetDefault("Mr Bigfish");
             Main.npcFrameCount[npc.type] = 1;
         }
 
@@ -31,18 +31,18 @@ namespace SenorBigfish.NPCs
         {
             if (Main.hardMode)
             {
-                return SpawnChanceHelper(spawnInfo) * (float)0.25; // lower spawn chance because there should be more Senor Bigfish in hardmode
+                return SpawnChanceHelper(spawnInfo) * 0.25f; // lower spawn chance because there should be more Senor Bigfish in hardmode
             }
             else
             {
                 return SpawnChanceHelper(spawnInfo);
             }
         }
-        
-         /*
-          * Helper method for SpawnChance(), determines the spawnrate based on the given spawnInfo.
-          * This NPC spawns naturally in the ocean biome or on the entire surface if it's raining.
-          * */
+
+        /*
+         * Helper method for SpawnChance(), determines the spawnrate based on the given spawnInfo.
+         * This NPC spawns naturally in the ocean biome or on the entire surface if it's raining.
+         * */
         private float SpawnChanceHelper(NPCSpawnInfo spawnInfo)
         {
             if (spawnInfo.player.ZoneBeach)
@@ -64,7 +64,6 @@ namespace SenorBigfish.NPCs
             {
                 Item.NewItem(rect.X, rect.Y, rect.Width, rect.Height, mod.ItemType("MrBubbles"), 1);
             }
-
             base.NPCLoot();
         }
     }
