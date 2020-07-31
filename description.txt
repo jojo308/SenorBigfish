@@ -1,1 +1,8 @@
-This mod adds some stuff related to Senor Bigfish. An inside joke you won't understand.
+This mod adds some stuff related to Senor Bigfish, an inside joke you won't understand.
+It's related to the logo of Bigfish Games, a gaming company.
+
+It contains:
+* 2 NPCs
+* 2 swords
+* vanity set
+* flying chicken pet
